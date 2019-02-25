@@ -9,10 +9,21 @@ from .serializers import SongsSerializer
 
 
 class BaseViewTest(APITestCase):
+    """
+    Used to create the songs in the database for testing
+    """
     client = APIClient()
 
     @staticmethod
     def create_song(title="", artist=""):
+        """
+        Creates songs in the database
+        Args:
+            title - Title of the songs
+            artist - Artist who wrote the songs
+        Returns:
+            null
+        """
         if title != "" and artist != "":
             Songs.objects.create(title=title, artist=artist)
 
@@ -25,6 +36,10 @@ class BaseViewTest(APITestCase):
 
 
 class GetAllSongsTest(BaseViewTest):
+    """
+    Holds all the song test methods
+    """
+
 
     def test_get_all_songs(self):
         """
