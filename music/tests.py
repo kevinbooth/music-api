@@ -40,7 +40,6 @@ class GetAllSongsTest(BaseViewTest):
     Holds all the song test methods
     """
 
-
     def test_get_all_songs(self):
         """
         This test ensures that all songs added in the setUp method

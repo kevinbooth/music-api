@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#REST rest_framework
+# REST rest_framework
 
 REST_FRAMEWORK = {
     # When you enable API versioning, the request.version attribute will contain a string
