@@ -1,3 +1,7 @@
+"""
+Module that defines the models of the music app
+"""
+
 from django.db import models
 
 

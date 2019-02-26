@@ -1,3 +1,7 @@
+"""
+Module that handles the serialization of Song data
+"""
+
 from rest_framework import serializers
 from .models import Songs
 

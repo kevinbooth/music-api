@@ -1,3 +1,7 @@
+"""
+Module that holds all the view classes in the music app
+"""
+
 from django.shortcuts import render
 from rest_framework import generics
 from .models import Songs
